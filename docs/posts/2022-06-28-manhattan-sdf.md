@@ -2,13 +2,13 @@
 title: ManhattanSDF 笔记
 subtitle: Neural 3D Scene Reconstruction with the Manhattan-world Assumption. CVPR 2022 (Oral)
 author: Krahets
-date: 2022-07-30
+date: 2022-06-28
 tags: 
   - PaperNotes
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-07-30-manhattan-sdf.png
+headerImage: /img/header/2022-06-28-manhattan-sdf.png
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
