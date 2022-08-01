@@ -1,0 +1,26 @@
+{
+  "name": "Krahets",
+  "short_name": "Krahets",
+  "description": "Krahets Blog",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#22272e",
+  "theme_color": "#1e2124",
+  "icons": [
+    {
+      "src": "/img/logo/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
