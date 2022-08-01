@@ -17,7 +17,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: `/img/logo/favicon-16x16.png`
+        href: `/img/logo/favicon-16_16.png`
       }
     ],
     [
@@ -26,7 +26,7 @@ export default defineUserConfig({
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: `/img/logo/favicon-32x32.png`
+        href: `/img/logo/favicon-32_32.png`
       }
     ],
     ["link", { rel: "manifest", href: "/manifest.webmanifest" }],

@@ -1,6 +1,6 @@
 set -e
 pnpm docs:build
-cd .vuepress/dist
+cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
