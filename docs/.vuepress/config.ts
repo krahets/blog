@@ -43,12 +43,12 @@ export default defineUserConfig({
     "/": {
       lang: "en-US",
       title: "Krahets",
-      description: "Krahets Blog"
+      description: "Krahets"
     },
     "/zh/": {
       lang: "zh-CN",
       title: "Krahets",
-      description: "Krahets Blog"
+      description: "Krahets"
     }
   },
 
@@ -65,7 +65,7 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: "Yudong Jin (Krahets)",
+      name: "Yudong Jin",
       avatar: "/img/avatar.png",
       description: "from light comes darkness, from darkness be light",
       sns: {

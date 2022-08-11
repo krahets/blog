@@ -1,7 +1,7 @@
 {
   "name": "Krahets",
   "short_name": "Krahets",
-  "description": "Krahets Blog",
+  "description": "Krahets",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#22272e",
