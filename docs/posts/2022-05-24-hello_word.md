@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: true
-headerImage: /img/header/2022-05-24-hello-word.png
+headerImage: /img/header/2022-05-24-hello_word.png
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true

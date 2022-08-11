@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-06-28-manhattan-sdf.png
+headerImage: /img/header/2022-06-28-manhattan_sdf.png
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true

@@ -30,8 +30,8 @@ export default defineUserConfig({
       }
     ],
     ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
-    ["meta", { name: "application-name", content: "Krahets Blog" }],
-    ["meta", { name: "apple-mobile-web-app-title", content: "Krahets Blog" }],
+    ["meta", { name: "application-name", content: "Krahets" }],
+    ["meta", { name: "apple-mobile-web-app-title", content: "Krahets" }],
     ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
     ["link", { rel: "apple-touch-icon", href: `/img/logo/apple-touch-icon.png` }],
     ["meta", { name: "theme-color", content: "#1e2124" }],
@@ -42,12 +42,12 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Krahets Blog",
+      title: "Krahets",
       description: "Krahets Blog"
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "Krahets Blog",
+      title: "Krahets",
       description: "Krahets Blog"
     }
   },
@@ -65,7 +65,7 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: "Krahets",
+      name: "Yudong Jin (Krahets)",
       avatar: "/img/avatar.png",
       description: "from light comes darkness, from darkness be light",
       sns: {
