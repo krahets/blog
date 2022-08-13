@@ -1,6 +1,6 @@
 ---
-title: Structure-from-Motion Revisited 笔记
-subtitle: (COLMAP) Structure-from-Motion Revisited. CVPR 2016
+title: 「论文笔记」Structure-from-Motion Revisited
+subtitle: Schonberger, et al. Structure-From-Motion Revisited. CVPR 2016
 author: Krahets
 date: 2022-07-01
 tags: 
@@ -15,11 +15,9 @@ giscus: true
 ---
 
 ::: link [Structure-from-Motion Revisited](https://openaccess.thecvf.com/content_cvpr_2016/papers/Schonberger_Structure-From-Motion_Revisited_CVPR_2016_paper.pdf)
-Structure-from-Motion Revisited
 :::
 
 ::: link [COLMAP](https://colmap.github.io/)
-COLMAP
 :::
 
 ## 1. 简介

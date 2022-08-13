@@ -1,6 +1,6 @@
 ---
-title: ManhattanSDF 笔记
-subtitle: Neural 3D Scene Reconstruction with the Manhattan-world Assumption. CVPR 2022 (Oral)
+title: 「论文笔记」ManhattanSDF
+subtitle: Haoyu Guo, et al. Neural 3D Scene Reconstruction with the Manhattan-world Assumption. CVPR 2022 (Oral)
 author: Krahets
 date: 2022-06-28
 tags: 
@@ -15,7 +15,6 @@ giscus: true
 ---
 
 ::: link [Neural 3D Scene Reconstruction with the Manhattan-world Assumption](http://zju3dv.github.io/manhattan_sdf/)
-ManhattanSDF
 :::
 
 ## Motivation

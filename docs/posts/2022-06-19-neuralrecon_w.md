@@ -1,6 +1,6 @@
 ---
-title: NeuralRecon-W 笔记
-subtitle: NeuralRecon in the wild. SIGGRAPH 2022
+title: 「论文笔记」NeuralRecon-W
+subtitle: Jiaming Sun, et al. Neural 3D Reconstruction in the Wild. SIGGRAPH 2022
 author: Krahets
 date: 2022-06-28
 tags: 
@@ -13,6 +13,9 @@ headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
 ---
+
+::: link [Neural 3D Reconstruction in the Wild](https://zju3dv.github.io/neuralrecon-w/)
+:::
 
 ![image-20220802000327184](https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220802_1659369807.png)
 

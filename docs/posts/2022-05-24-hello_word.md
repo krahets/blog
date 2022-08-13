@@ -3,8 +3,6 @@ title: Hello World
 subtitle: A Test Post
 author: Renovamen
 date: 2022-05-24
-tags: 
-  - Template
 
 layout: Post
 useHeaderImage: true
