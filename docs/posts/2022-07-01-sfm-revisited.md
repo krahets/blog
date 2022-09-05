@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-07-01-sfm-revisited.png
+headerImage: /img/header/2022-07-01-sfm-revisited.jpg
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true

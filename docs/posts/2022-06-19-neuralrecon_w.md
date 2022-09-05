@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-06-19-neuralrecon_w.png
+headerImage: /img/header/2022-06-19-neuralrecon_w.jpg
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true

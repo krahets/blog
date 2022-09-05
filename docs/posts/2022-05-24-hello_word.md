@@ -6,7 +6,7 @@ date: 2022-05-24
 
 layout: Post
 useHeaderImage: true
-headerImage: /img/header/2022-05-24-hello_word.png
+headerImage: /img/header/paper.jpg
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
@@ -183,10 +183,6 @@ $$
 
 ::: link {fa-github-alt} [vuepress-theme-gungnir](https://github.com/Renovamen/vuepress-theme-gungnir)
 A blog theme for VuePress 2.
-:::
-
-::: link {/img/links/me.png} [My Blog](https://blog.zxh.io)
-My links.
 :::
 
 ::: info
