@@ -65,7 +65,7 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: "Yudong Jin",
+      name: "Yudong Jin (Krahets)",
       avatar: "/img/avatar.png",
       description: "from light comes darkness, from darkness be light",
       sns: {
