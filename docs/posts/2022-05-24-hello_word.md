@@ -6,7 +6,7 @@ date: 2022-05-24
 
 layout: Post
 useHeaderImage: true
-headerImage: /img/header/paper.jpg
+headerImage: /img/header/paper_notes.jpg
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true

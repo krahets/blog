@@ -8,11 +8,13 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/paper.jpg
+headerImage: /img/header/paper_notes.jpg
 headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
 ---
+
+![image-20221005181919765](https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/10/upgit_20221005_1664965160.png)
 
 ::: link [Volume Rendering Digest (for NeRF)](https://arxiv.org/pdf/2209.02417.pdf)
 :::
