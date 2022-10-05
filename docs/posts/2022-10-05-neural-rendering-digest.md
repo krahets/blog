@@ -37,15 +37,15 @@ T(a \rightarrow b) & = \frac{T(b)}{T(a)} = \exp(-\int_a^b \sigma(t) dt) \\
 \end{aligned}
 $$
 
-**概率解释。** 我们可以将 $1 - T(t)$ （通常称为透明度）解释为累积分布函数（CDF），表示射线在达到 $t$ 之前击中粒子的概率； $T(t) \cdot \sigma(t)$ 则是对应的概率密度函数（PDF），给定了射线在时刻 $t$ 终止的似然。
+「**概率解释**」我们可以将 $1 - T(t)$ （通常称为透明度）解释为累积分布函数（CDF），表示射线在达到 $t$ 之前击中粒子的概率； $T(t) \cdot \sigma(t)$ 则是对应的概率密度函数（PDF），给定了射线在时刻 $t$ 终止的似然。
 
-**体积渲染。** 设背景颜色 $c_{bg}$ ，射线沿着 $t = 0 \rightarrow D$ ，由于在 $t$ 处终止的概率密度为 $T(t) \cdot \sigma(t)$ ，因此预计颜色为
+「**体积渲染**」设背景颜色 $c_{bg}$ ，射线沿着 $t = 0 \rightarrow D$ ，由于在 $t$ 处终止的概率密度为 $T(t) \cdot \sigma(t)$ ，因此预计颜色为
 
 $$
 C = \int_0^D T(t) \cdot \sigma(t) \cdot c(t) \,dt + T(D) \cdot c_{bg}
 $$
 
-**均匀介质。** 假设射线片段 $[a, b]$ 内有恒定颜色 $c_a$ 和密度 $\sigma_a$ ，则可按照如下公式计算累积颜色：
+「**均匀介质**」假设射线片段 $[a, b]$ 内有恒定颜色 $c_a$ 和密度 $\sigma_a$ ，则可按照如下公式计算累积颜色：
 
 $$
 \begin{aligned} 
@@ -59,14 +59,12 @@ C(a \rightarrow b) & = \int_a^b T(a \rightarrow t) \cdot \sigma(t) \cdot c(t) \,
 \end{aligned}
 $$
 
-**透射率具有乘性。**射线在 $[a, c]$ 内未击中任何粒子的概率等于两段独立事件 $[a, b]$ 和 $[b, c]$ 的概率乘积。
-
+「**透射率具有乘性**」射线在 $[a, c]$ 内未击中任何粒子的概率等于两段独立事件 $[a, b]$ 和 $[b, c]$ 的概率乘积。
 $$
 T(a \rightarrow c) = T(a \rightarrow b) \cdot T(b \rightarrow c)
 $$
 
-**分段恒定数据的体积渲染。**综上所述，结合以上内容，我们可以计算通过分段恒定颜色和密度的介质的体积渲染积分。注意，此处光线是从 $t_1$ 发射的，因此透射率为 $T(0 \rightarrow t)$ 而非 $T(t_{n} \rightarrow t)$ 。
-
+「**分段恒定数据的体积渲染**」综上所述，结合以上内容，我们可以计算通过分段恒定颜色和密度的介质的体积渲染积分。注意，此处光线是从 $t_1$ 发射的，因此透射率为 $T(0 \rightarrow t)$ 而非 $T(t_{n} \rightarrow t)$ 。
 $$
 \begin{aligned} C(t_{N+1}) & = \sum_{n=1}^N \int_{t_n}^{t_{n+1}} T(t) \cdot \sigma_n \cdot c_n \, dt \\ 
 & = \sum_{n=1}^N \int_{t_n}^{t_{n+1}} T(0 \rightarrow t_n) \cdot T(t_n \rightarrow t) \cdot \sigma_n \cdot c_n \, dt \\ 
@@ -88,12 +86,14 @@ C(t_{n+1}) = \sum_{n=1}^N T_n \cdot \alpha_n \cdot c_n \\
 T_n = \prod_{n=1}^{N-1} (1 - \alpha_n)
 $$
 
-**另一种推导。**通过利用先前提到的 PDF 和 CDF 之前的关系 $(1 - T)’ = T \sigma$ ，
-
 ## 小结
 
 - 射线 $r(o,d)$ 有 $r(t) = o + td$ ，则将空间密度场 $\sigma(x)$ 参数化为体积密度 $\sigma(t)$
+
 - 透射率 $T(t) = \exp(- \int_0^t \sigma(t) \, dt)$ ，$T(a \rightarrow b) = \frac{T(b)}{T(a)} = \exp(-\int_a^b \sigma(t) dt)$ ，具有乘性 $T(a \rightarrow c) = T(a \rightarrow b) \cdot T(b \rightarrow c)$
+
 - 透射率与体积密度的概率解释：累计分布函数 CDF（透明度）$1 - T(t)$ ，概率密度函数 PDF（在 $t$ 处终止的似然）$T(t) \cdot \sigma(t)$
+
 - 体积渲染 $C = \int_0^D T(t) \cdot \sigma(t) \cdot c(t) \,dt + T(D) \cdot c_{bg}$ ，片段均匀介质下 $C(a \rightarrow b) = c_a \cdot (1 - \exp(-\sigma_a(b - a))) = c_a \cdot (1 - T(a \rightarrow b))$
+
 - 分段恒定（均匀介质） $C(t_{N+1}) = \sum_{n=1}^N T(0 \rightarrow t_n) \cdot (1 - \exp(-\sigma_n(t_{n+1} - t_n))) \cdot c_n$ ，令时间间隔恒为 $\delta_n$ ，则可以得到 NeRF 论文的体积渲染公式 $C(t_{N+1}) = \sum_{n=1}^N T_n \cdot (1 - exp(-\sigma_n \delta_n)) \cdot c_n$  ，其中 $T_n = \exp(\sum_{k=1}^{n-1} -\sigma_k \delta_k)$
