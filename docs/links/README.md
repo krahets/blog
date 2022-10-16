@@ -46,6 +46,10 @@ links:
         url: https://dellaert.github.io/
         img: /img/links/profile_man.png
         desc: NeRF
+      - sitename: Andreas Geiger
+        url: https://autonomousvision.github.io/
+        img: /img/links/profile_man.png
+        desc: NeRF, AD
   - title: Data Structure And Algorithm 
     items:
       - sitename: 图解算法数据结构

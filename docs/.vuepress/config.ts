@@ -77,10 +77,10 @@ export default defineUserConfig({
           icon: "co-code",
           link: "https://leetcode.cn/u/jyd/"
         },
-        // linkedin: "xiaohan-zou-55bba0160",
-        // facebook: "renovamen.zou",
-        // twitter: "renovamen_zxh",
-        // zhihu: "chao-neng-gui-su",
+        twitter: "krahets",
+        // linkedin: "yudongjin",
+        // facebook: "krahets",
+        // zhihu: "krahets",
         email: "krahets@163.com"
       }
     },
@@ -88,12 +88,8 @@ export default defineUserConfig({
     // header images on home page
     homeHeaderImages: [
       {
-        path: "/img/home-bg/1.jpg",
-        mask: "rgba(40, 57, 101, .4)"
-      },
-      {
-        path: "/img/home-bg/2.jpg",
-        mask: "rgba(40, 57, 101, .4)"
+        path: "/img/home-bg/home_office_white.jpg",
+        mask: "rgba(0, 0, 0, .2)"
       }
     ],
 
@@ -115,6 +111,9 @@ export default defineUserConfig({
         }
       }
     },
+
+    // default theme color
+    colorMode: "light",
 
     // theme-level locales config
     locales: {
@@ -174,9 +173,6 @@ export default defineUserConfig({
     },
 
     footer: `
-      All the articles are licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" 
-      target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
-      <br>
       &copy; <a href="https://github.com/krahets" target="_blank">Krahets</a> 2020-2022
     `
   }),

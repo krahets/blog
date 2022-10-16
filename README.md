@@ -1,6 +1,6 @@
 # Krahets Blog
 
-This is my blog, it is powered by [VuePress 2](https://v2.vuepress.vuejs.org/) and themed by [Gungnir](https://github.com/Renovamen/vuepress-theme-gungnir).
+This blog is powered by [VuePress 2](https://v2.vuepress.vuejs.org/) and [Gungnir](https://github.com/Renovamen/vuepress-theme-gungnir).
 
 ## Usage
 
@@ -22,8 +22,6 @@ Build for production with minification:
 pnpm docs:build
 ```
 
-Have fun!
-
 ## License
 
-All the articles are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The original content (texts, images, videos, and codes) present on the website is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

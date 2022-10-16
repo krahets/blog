@@ -154,7 +154,7 @@ sequenceDiagram
 
 ## Images
 
-![Image Example](/img/home-bg/1.jpg)
+![Image Example](/img/home-bg/home_office_white.jpg)
 
 ## Maths
 
