@@ -8,8 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-07-01-sfm-revisited.jpg
-headerMask: rgba(40, 57, 101, .4)
+headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220807_1659802324.png
 catalog: true
 giscus: true
 ---

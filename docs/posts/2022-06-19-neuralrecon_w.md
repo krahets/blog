@@ -8,8 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-06-19-neuralrecon_w.jpg
-headerMask: rgba(40, 57, 101, .4)
+headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220802_1659370450.png
 catalog: true
 giscus: true
 ---

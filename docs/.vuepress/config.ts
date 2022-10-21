@@ -88,8 +88,8 @@ export default defineUserConfig({
     // header images on home page
     homeHeaderImages: [
       {
-        path: "/img/home-bg/home_office_white.jpg",
-        mask: "rgba(0, 0, 0, .2)"
+        path: "/img/bg/home_office_white.jpg",
+        mask: "rgba(0, 0, 0, .25)"
       }
     ],
 

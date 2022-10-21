@@ -8,8 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/2022-06-28-manhattan_sdf.jpg
-headerMask: rgba(40, 57, 101, .4)
+headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/07/upgit_20220731_1659274191.png
 catalog: true
 giscus: true
 ---

@@ -8,8 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: /img/header/paper_notes.jpg
-headerMask: rgba(40, 57, 101, .4)
+headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220904_1662298381.png
 catalog: true
 giscus: true
 ---

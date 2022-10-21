@@ -7,7 +7,6 @@ date: 2022-05-24
 layout: Post
 useHeaderImage: true
 headerImage: /img/header/paper_notes.jpg
-headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
 ---
@@ -154,7 +153,7 @@ sequenceDiagram
 
 ## Images
 
-![Image Example](/img/home-bg/home_office_white.jpg)
+![Image Example](/img/bg/home_office_white.jpg)
 
 ## Maths
 

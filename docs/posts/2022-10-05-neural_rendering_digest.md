@@ -9,7 +9,6 @@ tags:
 layout: Post
 useHeaderImage: false
 headerImage: /img/header/paper_notes.jpg
-headerMask: rgba(40, 57, 101, .4)
 catalog: true
 giscus: true
 ---
