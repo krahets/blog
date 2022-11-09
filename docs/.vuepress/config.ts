@@ -148,10 +148,10 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: "krahets/krahets-giscus",
-        repoId: "R_kgDOHvc1AA",
+        repo: "krahets/krahets.github.io",
+        repoId: "R_kgDOHvvq6Q",
         category: "Announcements",
-        categoryId: "DIC_kwDOHvc1AM4CQhf-",
+        categoryId: "DIC_kwDOHvvq6c4CQjiJ",
         lazyLoad: true
       },
       mdPlus: {
