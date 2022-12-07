@@ -58,7 +58,7 @@ export default defineUserConfig({
 
   // configure default theme
   theme: gungnirTheme({
-    repo: "krahets/github.krahets.io",
+    repo: "krahets/blog",
     // docsDir: "docs",
 
     hitokoto: "https://v1.hitokoto.cn?c=i", // enable hitokoto (一言) or not?
