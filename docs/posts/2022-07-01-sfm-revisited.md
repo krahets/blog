@@ -4,7 +4,7 @@ subtitle: Schonberger, et al. Structure-From-Motion Revisited. CVPR 2016
 author: Krahets
 date: 2022-07-01
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

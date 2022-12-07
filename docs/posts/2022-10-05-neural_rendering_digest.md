@@ -4,7 +4,7 @@ subtitle: Andrea Tagliasacchi, et al. Volume Rendering Digest (for NeRF). arXiv 
 author: Krahets
 date: 2022-10-05
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

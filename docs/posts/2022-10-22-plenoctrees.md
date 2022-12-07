@@ -4,7 +4,7 @@ subtitle: Alex Xu, et al. PlenOctrees for Real-time Rendering of Neural Radiance
 author: Krahets
 date: 2022-10-22
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

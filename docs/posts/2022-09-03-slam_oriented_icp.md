@@ -4,7 +4,7 @@ subtitle: Hao Bai, et al. ICP Algorithm - Theory, Practice And Its SLAM-oriented
 author: Krahets
 date: 2022-09-03
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

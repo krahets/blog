@@ -4,7 +4,7 @@ subtitle: Alex Xu, et al. Plenoxels Radiance Fields without Neural Networks. CVP
 author: Krahets
 date: 2022-10-22
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

@@ -4,7 +4,7 @@ subtitle: Haoyu Guo, et al. Neural 3D Scene Reconstruction with the Manhattan-wo
 author: Krahets
 date: 2022-06-28
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false

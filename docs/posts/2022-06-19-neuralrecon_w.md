@@ -4,7 +4,7 @@ subtitle: Jiaming Sun, et al. Neural 3D Reconstruction in the Wild. SIGGRAPH 202
 author: Krahets
 date: 2022-06-28
 tags: 
-  - PaperNotes
+  - PaperReading
 
 layout: Post
 useHeaderImage: false
