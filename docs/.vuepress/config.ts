@@ -148,11 +148,11 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: "krahets/krahets.github.io",
+        repo: "krahets/blog",
         repoId: "R_kgDOHvvq6Q",
         category: "Announcements",
         categoryId: "DIC_kwDOHvvq6c4CQjiJ",
-        lazyLoad: true
+        lazyLoad: false
       },
       mdPlus: {
         all: true
@@ -160,8 +160,8 @@ export default defineUserConfig({
       // ga: "G-EE8M2S3MPB",
       // ba: "10b7bc420625758a319d6b23aed4700f",
       rss: {
-        siteURL: "https://krahets.gihub.io",
-        copyright: "Krahets 2020-2022"
+        siteURL: "https://jyd.pages.dev",
+        copyright: "Krahets 2022"
       },
       pwa: true,
       readingTime: {
