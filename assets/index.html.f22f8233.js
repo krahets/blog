@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-72b3e7f2","path":"/tags/paperreading/","title":"PaperReading | Tags","lang":"en-US","frontmatter":{"title":"PaperReading | Tags","layout":"Tags","blog":{"type":"category","name":"PaperReading","key":"tag"}},"excerpt":"","headers":[],"git":{},"filePathRelative":null}');export{e as data};
