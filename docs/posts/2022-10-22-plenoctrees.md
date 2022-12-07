@@ -23,25 +23,25 @@ NeRF 渲染效率低下，使用主流高端 GPU 渲染一张 800x800 的图片�
 
 原生 NeRF 直接将位置和方向 $(x, y, z, \theta, \phi )$ 映射到体积密度和颜色 $(\sigma, c)$ 。球谐函数常被用于建模朗伯体表面、甚至光泽表面。作者将球谐函数引入 NeRF 建模。
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368528.png" alt="Untitled" style="zoom:33%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368528.png" alt="Untitled" style="zoom:33%;" />
 
 与原始 NeRF 不同，NeRF-SH 先将位置 $x$ 输入到 MLP 中获得体积密度 $\sigma$ 和球谐函数系数 $k$ 。每个 $k_l^m \in \R^3$ 都包含 RGB 的 3 个系数。
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368531.png" alt="Untitled" style="zoom: 33%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368531.png" alt="Untitled" style="zoom: 33%;" />
 
 输入方向 $d$ 和参数 $k_l^m$ ，通过球谐函数 $Y_l^m$ ，计算得到颜色 $c$ 。$S$ 是 sigmoid 函数，用于将颜色归一化。
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368539.png" alt="Untitled" style="zoom: 33%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368539.png" alt="Untitled" style="zoom: 33%;" />
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368537.png" alt="Untitled" style="zoom: 50%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368537.png" alt="Untitled" style="zoom: 50%;" />
 
 如果仅用 RGB loss 训练，那么模型在未被观测空间生成的几何将缺少约束。为了解决此问题，作者在 loss 中加入了一个正则项，鼓励 NeRF 在某个空间可能是 empty 或 solid 时选择呈现 empty ，
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368559.png" alt="Untitled" style="zoom: 50%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368559.png" alt="Untitled" style="zoom: 50%;" />
 
 整体 Loss 函数变为 $L_{RGB} + \beta_{sparsity} L_{sparsity}$ ，其中 $\beta_{sparsity}$ 是超参数。
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368562.png" alt="Untitled" style="zoom:50%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368562.png" alt="Untitled" style="zoom:50%;" />
 
 ### **基于八叉树的实时渲染**
 
@@ -53,7 +53,7 @@ NeRF 渲染效率低下，使用主流高端 GPU 渲染一张 800x800 的图片�
 2. **过滤。** 使用所有训练图像的视角渲染 alpha map ，记录射线上每个体素的权重 $1 - \exp(- \sigma_i \delta)$ （含义是射线第 $i$ 片段的不透明度），并删除权重低于阈值 $\tau_w$ 的体素。由此完成八叉树的建立，未被删除的体素作为八叉树的叶子结点，其余位置为空。
 3. **采样。** 在每个剩余体素中随机采样 256 个点，以采样点平均值作为叶子结点的值。
 
-<img src="2022-10-22-plenoctrees.assets/upgit_20221022_1666368598.png" alt="Untitled" style="zoom:40%;" />
+<img src="/2022-10-22-plenoctrees.assets/upgit_20221022_1666368598.png" alt="Untitled" style="zoom:40%;" />
 
 **模型微调。** 由于整个模型是可微的，我们可以直接在建立好的八叉树模型上进行微调，以提升渲染图像质量。
 
