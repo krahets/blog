@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220904_1662298381.png
+headerImage: 2022-09-03-slam_oriented_icp.assets/upgit_20220904_1662298381-0436519.png
 catalog: true
 giscus: true
 ---
@@ -42,7 +42,7 @@ ICP 算法基本思想：若源点云和目标点云之间的对应关系已知�
 
 具体上看，给定源点云 $S = \{ s_1, s_2, …, s_I \}$ 、目标点云 $D = \{ d_1, d_2, …, d_J \}$ ，设收敛阈值 $\theta_0$ 、质心算子 $M$ 、已知对应关系下的位子求解算子 $F$ 、配准误差 $\epsilon$ 、对应关系 $C(s_i) = \{ (i, j) \}$ ，位姿变换算子 $T_{R,t}$ 。基本 ICP 算法流程如下图所示。
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220904_1662298381.png" alt="image-20220904213301106" style="zoom: 50%;" />
+<img src="2022-09-03-slam_oriented_icp.assets/upgit_20220904_1662298381-0436519.png" alt="image-20220904213301106" style="zoom: 50%;" />
 
 ### 3.2 以往分类方法
 
@@ -64,17 +64,17 @@ Marc Levoy 等人提出一种 ICP 的经典分类法 *Efficient Variants of the 
 - Moosmann et al, 2011, Velodyne SLAM model. 使用滤波步骤来精化 map 和 ICP 。此方法提出 de-skewing 应该在每轮 ICP 中执行，根据实验结果，de-skewing 仅两次已经足够。
 - Dai et al,  coarse-to-fine SLAM model. 如下图所示，在 local optimization 部分，原始点云被分割为多个片段，将其中一个片段作为参考，使用 point-to-plane ICP 将其他片段按序注册到此片段。在 pose graph construction 部分，具有高相似度的点云片段集也会通过 ICP 来配准到一起。
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220904_1662298403.png" alt="image-20220904213323029" style="zoom:50%;" />
+<img src="2022-09-03-slam_oriented_icp.assets/upgit_20220904_1662298403.png" alt="image-20220904213323029" style="zoom:50%;" />
 
 ### 5.2  有 / 无 路标 SLAM
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220904_1662298424.png" alt="image-20220904213343998" style="zoom:50%;" />
+<img src="2022-09-03-slam_oriented_icp.assets/upgit_20220904_1662298424.png" alt="image-20220904213343998" style="zoom:50%;" />
 
 基于路标的 SLAM 利用在图片中检测到的路标信息，例如树木、建筑、障碍物、或人工路标，路标提供了高置信度的信息。
 
 - Holder et al, 2019, A real-time pose-graph-based SLAM system. 此工作使用 point-to-point ICP 匹配 Radar 采集的数据和路标，因为路标整体是由 3D 点构成的 — 如下图所示，在 sub-maps 上只有很少的点和面特征。
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/09/upgit_20220905_1662313240.png" alt="image-20220904213415103" style="zoom:50%;" />
+<img src="2022-09-03-slam_oriented_icp.assets/upgit_20220905_1662313240.png" alt="image-20220904213415103" style="zoom:50%;" />
 
 - Masahiro Tomono, 2009. 此方法将双目相机采集图像中的边缘点看作人造路标，将 3D 点投影到 2D 图像上，使得投影 2D 点和图像检测边缘点误差最小化。此工作还使用 ICP 来调整关键帧的图像位姿。
 

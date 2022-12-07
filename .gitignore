@@ -3,6 +3,9 @@ docs/.vuepress/.temp/
 docs/.vuepress/.cache/
 docs/.vuepress/dist/
 
+# Typora images
+docs/posts/*.assets/
+
 # Node modules
 node_modules/
 

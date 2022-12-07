@@ -8,7 +8,7 @@ tags:
 
 layout: Post
 useHeaderImage: false
-headerImage: https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220807_1659802324.png
+headerImage: 2022-07-01-sfm-revisited.assets/upgit_20220807_1659802324.png
 catalog: true
 giscus: true
 ---
@@ -21,7 +21,7 @@ giscus: true
 
 ## 1. 简介
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220807_1659802324.png" alt="image-20220807001204568" style="zoom:50%;" />
+<img src="2022-07-01-sfm-revisited.assets/upgit_20220807_1659802324.png" alt="image-20220807001204568" style="zoom:50%;" />
 
 增量式、多层式、全局式是当前三种主流 SfM 方案；目前，增量式 SfM 是处理非结构化照片集的最流行的方法。增量式 SfM 的主要问题是鲁棒性、精度、完整性、扩展性。
 
@@ -29,7 +29,7 @@ giscus: true
 
 本文增量式 SfM pipeline ：特征提取、匹配、几何校验，输出场景图（scene graph）；选择初始两视图并重建；增量式注册新图片、三角化场景点、异常值过滤、BA 重优化。
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220807_1659802352.png" alt="image-20220807001232902" style="zoom:50%;" />
+<img src="2022-07-01-sfm-revisited.assets/upgit_20220807_1659802352.png" alt="image-20220807001232902" style="zoom:50%;" />
 
 ### 2.1. 对应点搜索
 
@@ -115,7 +115,7 @@ giscus: true
 1. 将二维图片上离散为 $K_l$ 个固定大小的网格单元，网格有两种状态：空、满。当重建点位于某网格内，则此网格转换为“满”，并将图片分数 $S_i$ 提升权重 $w_l$ 。由于单元格只计入总分数一次，因此此算法更倾向于选定均匀分布。
 2. 然而，如果可视点 $N_t \ll L_l^2$ ，则可能每个点都落入不同网格，导致不能很好地评价点集分布。因此，作者通过构建 $l=1 \dots L$ 的多分辨率金字塔（网格数 $K_l = 2^L$ ），总分数为在各分辨率上的加权和 $w_l = K^2$。
 
-<img src="https://raw.githubusercontent.com/krahets/krahets-giscus/main/2022/08/upgit_20220807_1659802403.png" alt="image-20220807001323433" style="zoom:50%;" />
+<img src="2022-07-01-sfm-revisited.assets/upgit_20220807_1659802403.png" alt="image-20220807001323433" style="zoom:50%;" />
 
 ### 4.3. 高效鲁棒三角化 (Triangulation)
 
